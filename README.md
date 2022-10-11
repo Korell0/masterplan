@@ -1,5 +1,13 @@
 # masterplan
 
-YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Scrum master: Korszi
+Termékgazda: Foki Zoli
 
-ezt most én írom BG 😢
+Kezdőlap: 
+        -Bemutatkozás, mivel foglalkozunk
+        -Csapattagok bemutatása(linkek csapattagokhoz)
+        -Képek a csapatról
+        -Program rövid bemutatása link
+        -Letöltő link
+        -contactus
+        -Bootstrap 5 dizájn
