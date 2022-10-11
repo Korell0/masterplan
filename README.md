@@ -11,3 +11,8 @@ Kezdőlap:
         -Letöltő link
         -contactus
         -Bootstrap 5 dizájn
+
+Program rövid bemutatása: 
+        -Bootstrap 5 dizájn
+        -Program funkcióinak leírása
+        -Programnyelv
