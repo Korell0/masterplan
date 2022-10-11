@@ -1,3 +1,5 @@
 # masterplan
 
 YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+ezt most én írom BG 😢
