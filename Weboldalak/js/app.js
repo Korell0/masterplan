@@ -19,11 +19,11 @@ app.run(function($rootScope) {
 app.config(function($routeProvider) {
     $routeProvider
         .when('/home', {
-            templateUrl: 'views/home.html',
+            templateUrl: './views/home.html',
             controller: 'homeCtrl'
         })
         .when('/program', {
-            templateUrl: 'views/program.html',
+            templateUrl: './views/program.html',
             controller: 'programCtrl'
         })
         .otherwise('/home')
