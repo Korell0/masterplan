@@ -76,3 +76,12 @@ span {
   
   .jobblent { grid-area: jobblent; }
   
+
+@media screen and(width: 600px){
+    .ember{
+        background-color: royalblue;
+        width: 20%;
+        height: 10%;
+    }
+    
+}

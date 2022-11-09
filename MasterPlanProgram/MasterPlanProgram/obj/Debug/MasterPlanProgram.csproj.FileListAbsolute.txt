@@ -1,0 +1,10 @@
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.exe.config
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.exe
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.pdb
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.AssemblyReference.cache
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Form1.resources
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Properties.Resources.resources
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.GenerateResource.cache
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.CoreCompileInputs.cache
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.exe
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.pdb
