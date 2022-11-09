@@ -8,3 +8,14 @@ D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanP
 D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.CoreCompileInputs.cache
 D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.exe
 D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.pdb
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.exe.config
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.exe
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.pdb
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.AssemblyReference.cache
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Form1.resources
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Properties.Resources.resources
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Sikideg.resources
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.GenerateResource.cache
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.CoreCompileInputs.cache
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.exe
+D:\BG\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.pdb
