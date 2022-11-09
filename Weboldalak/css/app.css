@@ -44,3 +44,35 @@ span {
     position: absolute;
     right: 0px
 }
+
+.icon
+{
+    width: 90px;
+    height: 90px;;
+}
+
+.programoldal {  display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "balfent kozepe jobbfent"
+      "ballent kozepe jobblent";
+  }
+  
+  .kozepe {
+       grid-area: kozepe; 
+       align-items: center;
+       margin-top: 270%;
+
+}
+  
+  .balfent { grid-area: balfent; }
+  
+  .ballent { grid-area: ballent; }
+  
+  .jobbfent { grid-area: jobbfent; }
+  
+  .jobblent { grid-area: jobblent; }
+  
