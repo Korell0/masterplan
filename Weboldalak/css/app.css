@@ -9,16 +9,25 @@ body {
 }
 
 header {
-    background-color: slategray;
-    color: white;
+    background-color: #2C2C32;
+    color: black;
     text-shadow: 0 0 2px black;
     font-size: 250%;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+}
+
+nav{
+    background-color: #2C2C32;
+}
+
+
+.contain{
+    background-color: #4F4F5F;
 }
 
 footer {
-    background-color: black;
+    background-color: #2C2C32;
     color: white;
     text-align: center;
     font-size: 80%;
@@ -52,9 +61,9 @@ span {
 }
 
 .programoldal {  display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    gap: 0px 50px;
     grid-auto-flow: row;
     grid-template-areas:
       "balfent kozepe jobbfent"
@@ -64,7 +73,7 @@ span {
   .kozepe {
        grid-area: kozepe; 
        align-items: center;
-       margin-top: 270%;
+       margin-top: 100%;
 
 }
   
@@ -75,13 +84,26 @@ span {
   .jobbfent { grid-area: jobbfent; }
   
   .jobblent { grid-area: jobblent; }
-  
 
-@media screen and(width: 600px){
+.ember{
+    width:200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+
+.csapat{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 60px;
+    border-radius: 10%;
+}
+
+/*@media screen and(width: 600px){
     .ember{
         background-color: royalblue;
         width: 20%;
         height: 10%;
     }
     
-}
+}*/

@@ -10,25 +10,24 @@
 <link rel="stylesheet" href="../Weboldalak/css/bootstrap.min.css">
 <link rel="stylesheet" href="../Weboldalak/css/app.css">
 
-<body>
+<body ng-cloak>
 
-    <div class="container" ng-cloak>
         <header>{{ title }}</header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Menü</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav nav">
                         <a class="nav-link" aria-current="page" href="#!{{ link.url }}" ng-repeat="link in links">{{ link.name }}</a>
 
                     </div>
                 </div>
             </div>
         </nav>
-        <section ng-view></section>
+        <section class="contain" ng-view></section>
         <footer>
             <div style="text-align:left;">
                 <img class="icon" src="../Weboldalak/css/images/Facebook_Logo.png" alt="facebook">
@@ -38,7 +37,6 @@
             </div>
             
     </footer>
-    </div>
 
     <script src="../Weboldalak/js/bootstrap.min.js"></script>
     <script src="../Weboldalak/js/angular.min.js"></script>
