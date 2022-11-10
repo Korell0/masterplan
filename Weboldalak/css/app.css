@@ -1,26 +1,36 @@
 body {
     background-color: silver;
-}
-
-.container {
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0 0 10px gray;
+    color: white;
+    
 }
 
 header {
     background-color: #2C2C32;
-    color: black;
+    color: white;
     text-shadow: 0 0 2px black;
     font-size: 250%;
     text-align: center;
     padding: 5px;
 }
 
-nav{
+.nav{
     background-color: #2C2C32;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
 }
 
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color:royalblue !important;
+}
 
 .contain{
     background-color: #4F4F5F;
@@ -28,19 +38,15 @@ nav{
 
 footer {
     background-color: #2C2C32;
-    color: white;
     text-align: center;
     font-size: 80%;
     letter-spacing: 3px;
     padding: 10px;
 }
 
-section {
-    padding: 10px;
-}
-
 p {
     text-align: justify;
+    padding: 30px;
 }
 
 li {
