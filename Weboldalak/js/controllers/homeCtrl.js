@@ -6,4 +6,6 @@ app.controller('homeCtrl', function($scope) {
     $scope.gellert= "Gellért"
     $scope.adam= "Ádám"
     $scope.viktor= "Viktor"
+
+    $scope.progi="/program"
 });

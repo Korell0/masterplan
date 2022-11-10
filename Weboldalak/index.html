@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="hu" ng-app="sikidegek">
 
 <head>
@@ -12,21 +12,6 @@
 
 <body ng-cloak>
 
-        <header>{{ title }}</header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Menü</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav nav">
-                        <a class="nav-link" aria-current="page" href="#!{{ link.url }}" ng-repeat="link in links">{{ link.name }}</a>
-
-                    </div>
-                </div>
-            </div>
-        </nav>
         <section class="contain" ng-view></section>
         <footer>
             <div style="text-align:left;">
