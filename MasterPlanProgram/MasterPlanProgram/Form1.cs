@@ -19,24 +19,13 @@ namespace MasterPlanProgram
 
         private void _3D_Click(object sender, EventArgs e)
         {
-            List<string> cimkek = new List<string>()
-            {
-                "e átló: ",
-                "f átló: "
-            };
-
-            new Sikideg(cimkek).Show();
+            new Sikideg(0).Show();
             this.Hide();
         }
 
         private void _2D_Click(object sender, EventArgs e)
         {
-            List<string> cimkek = new List<string>()
-            {
-                "e átló: ",
-                "f átló: "
-            };
-            new Sikideg(cimkek).Show();
+            new Sikideg(1).Show();
             this.Hide();
         }
     }
