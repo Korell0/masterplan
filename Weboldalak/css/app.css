@@ -74,30 +74,26 @@ span {
     margin-top: 10px;
 }
 
-.programoldal {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 50px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "balfent kozepe jobbfent"
-      "ballent kozepe jobblent";
+.programoldal { 
+
+
   }
   
   .kozepe {
-       grid-area: kozepe; 
-       align-items: center;
-       margin-top: 180%;
-
+    text-align: center;
 }
   
-  .balfent { grid-area: balfent; }
+  .balfent {
+    text-align: center;
+    }
   
-  .ballent { grid-area: ballent; }
+  .ballent {text-align: center;}
   
-  .jobbfent { grid-area: jobbfent; }
+  .jobbfent {text-align: center;}
   
-  .jobblent { grid-area: jobblent; }
+  .jobblent {}
+
+  h3{text-align: center;}
 
 .ember{
     width:200px;
