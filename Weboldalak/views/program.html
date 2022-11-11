@@ -5,28 +5,41 @@
 </div>
 <hr>
 <main>
-    <div class="programoldal">
+    <div class="programoldal container-fluid ">
        
-        <div class="balfent">
-            <img style="width:500px; height:300px;" src={{alapkep1}} alt="kep1">
+        <div class=" row">
+            <div class="balfent col-lg-6 col-sm-12">
+                <img style="width:500px; height:300px;" src={{alapkep1}} alt="kep1">
+                
+            </div>
+            <div class="jobbfent col-lg-6 col-sm-12">
+                <p>
+                    <h3>Jellemzők: </h3>
+                    {{bemutat2}}
+                </p>
+            </div>
         </div>
-        <div class="ballent">
+
+        <div class="col align-self-center" >
+            <div style="text-align: centre;" class="kozepe col align-self-center ">
+                <button style="text-align: centre;">LETOLTEEES</button>
+            </div>
+             </div>
+        
+      <div class="row">
+        <div class="ballent col-lg-6 col-sm-12">
             <h3>Funkciók</h3>
             <p>
                 {{bemutat1}}
             </p>
         </div>
-        <div style="text-align: centre;" class="kozepe">
-            <button style="text-align: centre;">LETOLTEEES</button>
-        </div>
-        <div class="jobbfent">
-            <p>
-                <h3>Jellemzők: </h3>
-                {{bemutat2}}
-            </p>
-        </div>
-        <div class="jobblent">
+        <div class="jobblent col-lg-6 col-sm-12">
             <img style="width:500px; height:300px;" src={{alapkep2}} alt="kep2">
+              
         </div>
+      </div>
+        
+       
+        
       </div>
 </main>
