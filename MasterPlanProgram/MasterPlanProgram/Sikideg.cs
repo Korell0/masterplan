@@ -13,17 +13,21 @@ namespace MasterPlanProgram
     public partial class Sikideg : Form
     {
         static Alakzat Actual;
-        static Button Gomb;
         
-        public Sikideg(int box)
+        public Sikideg(int box, List<string> adatok)
         {
             InitializeComponent();
             new List<GroupBox>() { groupbox1, groupbox2 }[box].Visible = true;
             groupbox2.Location = groupbox1.Location;
+            label1.Text = adatok[0];
+            label2.Text = adatok[1];
         }
 
         private void GenerateInput(List<string> cimkek, string hely)
         {
+            resetBtn.Visible = true;
+            textBox1.Visible = true;
+            textBox1.Visible = true;
             RemoveVisibleInput();
             Actual = new Alakzat(cimkek, hely);
 
@@ -65,6 +69,7 @@ namespace MasterPlanProgram
                 "r sugár: "
             };
             GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolGomb;
         }
 
         private void gulaBtn_Click(object sender, EventArgs e)
@@ -73,10 +78,10 @@ namespace MasterPlanProgram
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
-                "b oldal: ",
                 "M magasság:"
             };
             GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolGula;
         }
 
         private void hengerBtn_Click(object sender, EventArgs e)
@@ -88,19 +93,44 @@ namespace MasterPlanProgram
                 "M magasság: "
             };
             GenerateInput(cimkek, hely);
-            Button gomb = new Button();
-            gomb.Location = new Point(375, 225);
-            this.Controls.Add(gomb);
-            gomb.Text = "Számol";
-            Gomb = gomb;
-
-
-
+            Actual.Szamol.Click += SzamolHenger;
         }
+
+        private void SzamolHenger(object sender, EventArgs e)
+        {
+            textBox1.Text = $"{2*Convert.ToDouble(Actual.Bemenet[0].Text)*Math.PI* Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
+            textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text),2)*Math.PI*Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
+        }
+
+        private void SzamolGula(object sender, EventArgs e)
+        {
+            double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+            double M = Convert.ToDouble(Actual.Bemenet[1].Text);
+            double aM = Math.Sqrt(Math.Pow(a/2, 2) + Math.Pow(M , 2));
+
+            textBox1.Text = $"{((a * aM) / 2) * 4 + Math.Pow(a, 2): 0.00}";
+            textBox2.Text = $"{(Math.Pow(a, 2)*M)/3: 0.00}";
+        }
+
+        private void SzamolGomb(object sender, EventArgs e)
+        {
+            textBox1.Text = $"{4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
+            textBox2.Text = $"{(4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 3) * Math.PI) / 3 : 0.00}";
+        }
+
+
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            foreach (TextBox item in Actual.Bemenet)
+            {
+                item.Text = "";
+            }
         }
     }
 }
