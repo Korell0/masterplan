@@ -15,6 +15,7 @@ header {
 
 .nav{
     background-color: #2C2C32;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: block;
     text-align: center;
     margin-bottom: 10px;
@@ -34,10 +35,12 @@ a:hover{
 
 .contain{
     background-color: #4F4F5F;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 footer {
     background-color: #2C2C32;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
     font-size: 80%;
     letter-spacing: 3px;
@@ -62,34 +65,48 @@ span {
 
 .icon
 {
-    width: 90px;
-    height: 90px;;
+    width: 5%;
+    height: 5%;
+}
+.telo{
+    font-size: 150%;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.programoldal {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 50px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "balfent kozepe jobbfent"
-      "ballent kozepe jobblent";
+.programoldal { 
+
+
   }
   
   .kozepe {
-       grid-area: kozepe; 
-       align-items: center;
-       margin-top: 180%;
-
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    font-weight: bold;
+    border: 0px solid black;
+    background-color: #C3C3C3;
+}
+.kozepe2{
+    text-align: center;
 }
   
-  .balfent { grid-area: balfent; }
+  .balfent {
+    text-align: center;
+    width:500px;
+    height:300px;
+    border-radius: 35px;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+    }
   
-  .ballent { grid-area: ballent; }
+  .ballent {text-align: center;}
   
-  .jobbfent { grid-area: jobbfent; }
+  .jobbfent {text-align: center;}
   
-  .jobblent { grid-area: jobblent; }
+  .jobblent {}
+
+  h3{text-align: center;}
 
 .ember{
     width:200px;
