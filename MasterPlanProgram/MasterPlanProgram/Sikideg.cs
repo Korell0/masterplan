@@ -27,7 +27,9 @@ namespace MasterPlanProgram
         {
             resetBtn.Visible = true;
             textBox1.Visible = true;
-            textBox1.Visible = true;
+            textBox2.Visible = true;
+            label1.Visible = true;
+            label2.Visible = true;
             RemoveVisibleInput();
             Actual = new Alakzat(cimkek, hely);
 
@@ -96,6 +98,157 @@ namespace MasterPlanProgram
             Actual.Szamol.Click += SzamolHenger;
         }
 
+        private void deltoidBtn_Click(object sender, EventArgs e)
+        {
+            string hely = "Alakzatok/Deltoid/";
+            List<string> cimkek = new List<string>()
+            {
+                "a oldal: ",
+                "b oldal: ",
+                "e atlo: ",
+                "f atlo: "
+            };
+            GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolDeltoid;
+        }
+
+        private void haromszogBtn_Click(object sender, EventArgs e)
+        {
+            string hely = "Alakzatok/Háromszög/";
+            List<string> cimkek = new List<string>()
+            {
+                "a oldal: ",
+                "b oldal: ",
+                "c oldal: "
+            };
+            GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolHaromszog;
+        }
+        private void paralelogrammaBtn_Click(object sender, EventArgs e)
+        {
+            string hely = "Alakzatok/Paralelogramma/";
+            List<string> cimkek = new List<string>()
+            {
+                "a oldal: ",
+                "b oldal: ",
+                "m magasság: "
+            };
+            GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolParalelogramma;
+        }
+        private void korBtn_Click(object sender, EventArgs e)
+        {
+            string hely = "Alakzatok/Kör/";
+            List<string> cimkek = new List<string>()
+            {
+                "r sugár: "
+            };
+            GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolKor;
+        }
+        private void negyzetBtn_Click(object sender, EventArgs e)
+        {
+            string hely = "Alakzatok/Négyzet/";
+            List<string> cimkek = new List<string>()
+            {
+                "a oldal: "
+            };
+            GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolNegyzet;
+        }
+        private void rombuszBtn_Click(object sender, EventArgs e)
+        {
+            string hely = "Alakzatok/Rombusz/";
+            List<string> cimkek = new List<string>()
+            {
+                "a oldal: ",
+                "e átlő: ",
+                "f átló: "
+            };
+            GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolRombusz;
+        }
+        private void teglalapBtn_Click(object sender, EventArgs e)
+        {
+            string hely = "Alakzatok/Téglalap/";
+            List<string> cimkek = new List<string>()
+            {
+                "a oldal: ",
+                "b oldal: "
+            };
+            GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolTeglalap;
+        }
+        private void trapezBtn_Click(object sender, EventArgs e)
+        {
+            string hely = "Alakzatok/Trapéz/";
+            List<string> cimkek = new List<string>()
+            {
+                "a oldal: ",
+                "b oldal: ",
+                "c oldal: "
+            };
+            GenerateInput(cimkek, hely);
+            Actual.Szamol.Click += SzamolTrapez;
+        }
+
+        private void SzamolTrapez(object sender, EventArgs e)
+        {
+            double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+            double b = Convert.ToDouble(Actual.Bemenet[1].Text);
+            double c = Convert.ToDouble(Actual.Bemenet[2].Text);
+            double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow(((a - c) / 2), 2));
+            textBox1.Text = $"{a + c + b * 2 : 0.00}";
+            textBox2.Text = $"{((a + c) * m) / 2: 0.00}";
+        }
+
+        private void SzamolTeglalap(object sender, EventArgs e)
+        {
+            textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
+            textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * Convert.ToDouble(Actual.Bemenet[1].Text): 0.00}";
+        }
+
+        private void SzamolRombusz(object sender, EventArgs e)
+        {
+            textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
+            textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[1].Text) * Convert.ToDouble(Actual.Bemenet[2].Text)) / 2: 0.00}";
+        }
+
+        private void SzamolNegyzet(object sender, EventArgs e)
+        {
+            textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
+            textBox2.Text = $"{ Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2): 0.00}";
+        }
+
+        private void SzamolKor(object sender, EventArgs e)
+        {
+            textBox1.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * 2 * Math.PI : 0.00}";
+            textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
+        }
+
+        private void SzamolParalelogramma(object sender, EventArgs e)
+        {
+            textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)) : 0.00}";
+            textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[1].Text)* Convert.ToDouble(Actual.Bemenet[2].Text) : 0.00}";
+        }
+
+        private void SzamolHaromszog(object sender, EventArgs e)
+        {
+            double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+            double b = Convert.ToDouble(Actual.Bemenet[1].Text);
+            double c = Convert.ToDouble(Actual.Bemenet[2].Text);
+            double s = (a + b + c) / 2;
+            textBox1.Text = $"{a + b + c: 0.00}";
+            textBox2.Text = $"{Math.Sqrt(s*(s-a)*(s-b)*(s-c)): 0.00}";
+        }
+
+
+        private void SzamolDeltoid(object sender, EventArgs e)
+        {
+            textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
+            textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[2].Text) * Convert.ToDouble(Actual.Bemenet[3].Text)) / 2: 0.00}";
+        }
+
         private void SzamolHenger(object sender, EventArgs e)
         {
             textBox1.Text = $"{2*Convert.ToDouble(Actual.Bemenet[0].Text)*Math.PI* Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
@@ -118,8 +271,6 @@ namespace MasterPlanProgram
             textBox2.Text = $"{(4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 3) * Math.PI) / 3 : 0.00}";
         }
 
-
-
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
@@ -131,6 +282,8 @@ namespace MasterPlanProgram
             {
                 item.Text = "";
             }
+            textBox1.Text = "";
+            textBox2.Text = "";
         }
     }
 }

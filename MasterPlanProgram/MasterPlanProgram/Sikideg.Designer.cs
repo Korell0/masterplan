@@ -35,6 +35,14 @@ namespace MasterPlanProgram
             this.gulaBtn = new System.Windows.Forms.PictureBox();
             this.gombBtn = new System.Windows.Forms.PictureBox();
             this.groupbox2 = new System.Windows.Forms.GroupBox();
+            this.deltoidBtn = new System.Windows.Forms.PictureBox();
+            this.trapezBtn = new System.Windows.Forms.PictureBox();
+            this.teglalapBtn = new System.Windows.Forms.PictureBox();
+            this.rombuszBtn = new System.Windows.Forms.PictureBox();
+            this.negyzetBtn = new System.Windows.Forms.PictureBox();
+            this.paralelogrammaBtn = new System.Windows.Forms.PictureBox();
+            this.korBtn = new System.Windows.Forms.PictureBox();
+            this.haromszogBtn = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +54,15 @@ namespace MasterPlanProgram
             ((System.ComponentModel.ISupportInitialize)(this.hengerBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gulaBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gombBtn)).BeginInit();
+            this.groupbox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.deltoidBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trapezBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teglalapBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rombuszBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.negyzetBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paralelogrammaBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.korBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.haromszogBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,6 +114,14 @@ namespace MasterPlanProgram
             // 
             // groupbox2
             // 
+            this.groupbox2.Controls.Add(this.deltoidBtn);
+            this.groupbox2.Controls.Add(this.trapezBtn);
+            this.groupbox2.Controls.Add(this.teglalapBtn);
+            this.groupbox2.Controls.Add(this.rombuszBtn);
+            this.groupbox2.Controls.Add(this.negyzetBtn);
+            this.groupbox2.Controls.Add(this.paralelogrammaBtn);
+            this.groupbox2.Controls.Add(this.korBtn);
+            this.groupbox2.Controls.Add(this.haromszogBtn);
             this.groupbox2.Location = new System.Drawing.Point(12, 88);
             this.groupbox2.Name = "groupbox2";
             this.groupbox2.Size = new System.Drawing.Size(810, 70);
@@ -104,6 +129,94 @@ namespace MasterPlanProgram
             this.groupbox2.TabStop = false;
             this.groupbox2.Text = "Síkbeli alakzatok";
             this.groupbox2.Visible = false;
+            // 
+            // deltoidBtn
+            // 
+            this.deltoidBtn.Image = ((System.Drawing.Image)(resources.GetObject("deltoidBtn.Image")));
+            this.deltoidBtn.Location = new System.Drawing.Point(31, 14);
+            this.deltoidBtn.Name = "deltoidBtn";
+            this.deltoidBtn.Size = new System.Drawing.Size(50, 50);
+            this.deltoidBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.deltoidBtn.TabIndex = 10;
+            this.deltoidBtn.TabStop = false;
+            this.deltoidBtn.Click += new System.EventHandler(this.deltoidBtn_Click);
+            // 
+            // trapezBtn
+            // 
+            this.trapezBtn.Image = ((System.Drawing.Image)(resources.GetObject("trapezBtn.Image")));
+            this.trapezBtn.Location = new System.Drawing.Point(715, 14);
+            this.trapezBtn.Name = "trapezBtn";
+            this.trapezBtn.Size = new System.Drawing.Size(50, 50);
+            this.trapezBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.trapezBtn.TabIndex = 9;
+            this.trapezBtn.TabStop = false;
+            this.trapezBtn.Click += new System.EventHandler(this.trapezBtn_Click);
+            // 
+            // teglalapBtn
+            // 
+            this.teglalapBtn.Image = ((System.Drawing.Image)(resources.GetObject("teglalapBtn.Image")));
+            this.teglalapBtn.Location = new System.Drawing.Point(615, 14);
+            this.teglalapBtn.Name = "teglalapBtn";
+            this.teglalapBtn.Size = new System.Drawing.Size(50, 50);
+            this.teglalapBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.teglalapBtn.TabIndex = 9;
+            this.teglalapBtn.TabStop = false;
+            this.teglalapBtn.Click += new System.EventHandler(this.teglalapBtn_Click);
+            // 
+            // rombuszBtn
+            // 
+            this.rombuszBtn.Image = ((System.Drawing.Image)(resources.GetObject("rombuszBtn.Image")));
+            this.rombuszBtn.Location = new System.Drawing.Point(523, 14);
+            this.rombuszBtn.Name = "rombuszBtn";
+            this.rombuszBtn.Size = new System.Drawing.Size(50, 50);
+            this.rombuszBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rombuszBtn.TabIndex = 9;
+            this.rombuszBtn.TabStop = false;
+            this.rombuszBtn.Click += new System.EventHandler(this.rombuszBtn_Click);
+            // 
+            // negyzetBtn
+            // 
+            this.negyzetBtn.Image = ((System.Drawing.Image)(resources.GetObject("negyzetBtn.Image")));
+            this.negyzetBtn.Location = new System.Drawing.Point(425, 14);
+            this.negyzetBtn.Name = "negyzetBtn";
+            this.negyzetBtn.Size = new System.Drawing.Size(50, 50);
+            this.negyzetBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.negyzetBtn.TabIndex = 9;
+            this.negyzetBtn.TabStop = false;
+            this.negyzetBtn.Click += new System.EventHandler(this.negyzetBtn_Click);
+            // 
+            // paralelogrammaBtn
+            // 
+            this.paralelogrammaBtn.Image = ((System.Drawing.Image)(resources.GetObject("paralelogrammaBtn.Image")));
+            this.paralelogrammaBtn.Location = new System.Drawing.Point(227, 14);
+            this.paralelogrammaBtn.Name = "paralelogrammaBtn";
+            this.paralelogrammaBtn.Size = new System.Drawing.Size(50, 50);
+            this.paralelogrammaBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.paralelogrammaBtn.TabIndex = 9;
+            this.paralelogrammaBtn.TabStop = false;
+            this.paralelogrammaBtn.Click += new System.EventHandler(this.paralelogrammaBtn_Click);
+            // 
+            // korBtn
+            // 
+            this.korBtn.Image = ((System.Drawing.Image)(resources.GetObject("korBtn.Image")));
+            this.korBtn.Location = new System.Drawing.Point(327, 14);
+            this.korBtn.Name = "korBtn";
+            this.korBtn.Size = new System.Drawing.Size(50, 50);
+            this.korBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.korBtn.TabIndex = 9;
+            this.korBtn.TabStop = false;
+            this.korBtn.Click += new System.EventHandler(this.korBtn_Click);
+            // 
+            // haromszogBtn
+            // 
+            this.haromszogBtn.Image = ((System.Drawing.Image)(resources.GetObject("haromszogBtn.Image")));
+            this.haromszogBtn.Location = new System.Drawing.Point(128, 14);
+            this.haromszogBtn.Name = "haromszogBtn";
+            this.haromszogBtn.Size = new System.Drawing.Size(50, 50);
+            this.haromszogBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.haromszogBtn.TabIndex = 9;
+            this.haromszogBtn.TabStop = false;
+            this.haromszogBtn.Click += new System.EventHandler(this.haromszogBtn_Click);
             // 
             // pictureBox1
             // 
@@ -187,6 +300,15 @@ namespace MasterPlanProgram
             ((System.ComponentModel.ISupportInitialize)(this.hengerBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gulaBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gombBtn)).EndInit();
+            this.groupbox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.deltoidBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trapezBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teglalapBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rombuszBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.negyzetBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paralelogrammaBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.korBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.haromszogBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -207,5 +329,13 @@ namespace MasterPlanProgram
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button resetBtn;
+        private System.Windows.Forms.PictureBox trapezBtn;
+        private System.Windows.Forms.PictureBox teglalapBtn;
+        private System.Windows.Forms.PictureBox rombuszBtn;
+        private System.Windows.Forms.PictureBox negyzetBtn;
+        private System.Windows.Forms.PictureBox paralelogrammaBtn;
+        private System.Windows.Forms.PictureBox korBtn;
+        private System.Windows.Forms.PictureBox haromszogBtn;
+        private System.Windows.Forms.PictureBox deltoidBtn;
     }
 }
