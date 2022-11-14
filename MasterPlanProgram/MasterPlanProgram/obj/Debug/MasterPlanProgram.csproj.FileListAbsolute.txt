@@ -30,3 +30,14 @@ D:\Tananyag\Aszalk\masterplan\masterplan\MasterPlanProgram\MasterPlanProgram\obj
 D:\Tananyag\Aszalk\masterplan\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.CoreCompileInputs.cache
 D:\Tananyag\Aszalk\masterplan\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.exe
 D:\Tananyag\Aszalk\masterplan\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.pdb
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.exe.config
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.exe
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\bin\Debug\MasterPlanProgram.pdb
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.AssemblyReference.cache
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Form1.resources
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Properties.Resources.resources
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Sikideg.resources
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.GenerateResource.cache
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.CoreCompileInputs.cache
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.exe
+D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.pdb

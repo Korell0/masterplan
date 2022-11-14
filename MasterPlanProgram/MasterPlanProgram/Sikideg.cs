@@ -204,71 +204,141 @@ namespace MasterPlanProgram
 
         private void SzamolTeglalap(object sender, EventArgs e)
         {
-            textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
-            textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * Convert.ToDouble(Actual.Bemenet[1].Text): 0.00}";
+            try
+            {
+                textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
+                textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * Convert.ToDouble(Actual.Bemenet[1].Text): 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolRombusz(object sender, EventArgs e)
         {
-            textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
-            textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[1].Text) * Convert.ToDouble(Actual.Bemenet[2].Text)) / 2: 0.00}";
+            try
+            {
+                textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
+                textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[1].Text) * Convert.ToDouble(Actual.Bemenet[2].Text)) / 2: 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolNegyzet(object sender, EventArgs e)
         {
-            textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
-            textBox2.Text = $"{ Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2): 0.00}";
+            try
+            {
+                textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
+                textBox2.Text = $"{ Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2): 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolKor(object sender, EventArgs e)
         {
-            textBox1.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * 2 * Math.PI : 0.00}";
-            textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
+            try
+            {
+                textBox1.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * 2 * Math.PI : 0.00}";
+                textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolParalelogramma(object sender, EventArgs e)
         {
-            textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)) : 0.00}";
-            textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[1].Text)* Convert.ToDouble(Actual.Bemenet[2].Text) : 0.00}";
+            try
+            {
+                textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)) : 0.00}";
+                textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[1].Text)* Convert.ToDouble(Actual.Bemenet[2].Text) : 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolHaromszog(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(Actual.Bemenet[0].Text);
-            double b = Convert.ToDouble(Actual.Bemenet[1].Text);
-            double c = Convert.ToDouble(Actual.Bemenet[2].Text);
-            double s = (a + b + c) / 2;
-            textBox1.Text = $"{a + b + c: 0.00}";
-            textBox2.Text = $"{Math.Sqrt(s*(s-a)*(s-b)*(s-c)): 0.00}";
+            try
+            {
+                double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+                double b = Convert.ToDouble(Actual.Bemenet[1].Text);
+                double c = Convert.ToDouble(Actual.Bemenet[2].Text);
+                double s = (a + b + c) / 2;
+                textBox1.Text = $"{a + b + c: 0.00}";
+                textBox2.Text = $"{Math.Sqrt(s*(s-a)*(s-b)*(s-c)): 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
 
         private void SzamolDeltoid(object sender, EventArgs e)
         {
-            textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
-            textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[2].Text) * Convert.ToDouble(Actual.Bemenet[3].Text)) / 2: 0.00}";
+            try
+            {
+                textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
+                textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[2].Text) * Convert.ToDouble(Actual.Bemenet[3].Text)) / 2: 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolHenger(object sender, EventArgs e)
         {
-            textBox1.Text = $"{2*Convert.ToDouble(Actual.Bemenet[0].Text)*Math.PI* Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
-            textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text),2)*Math.PI*Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
+            try
+            {
+                textBox1.Text = $"{2*Convert.ToDouble(Actual.Bemenet[0].Text)*Math.PI* Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
+                textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text),2)*Math.PI*Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolGula(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(Actual.Bemenet[0].Text);
-            double M = Convert.ToDouble(Actual.Bemenet[1].Text);
-            double aM = Math.Sqrt(Math.Pow(a/2, 2) + Math.Pow(M , 2));
+            try
+            {
+                double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+                double M = Convert.ToDouble(Actual.Bemenet[1].Text);
+                double aM = Math.Sqrt(Math.Pow(a/2, 2) + Math.Pow(M , 2));
 
-            textBox1.Text = $"{((a * aM) / 2) * 4 + Math.Pow(a, 2): 0.00}";
-            textBox2.Text = $"{(Math.Pow(a, 2)*M)/3: 0.00}";
+                textBox1.Text = $"{((a * aM) / 2) * 4 + Math.Pow(a, 2): 0.00}";
+                textBox2.Text = $"{(Math.Pow(a, 2)*M)/3: 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolGomb(object sender, EventArgs e)
         {
-            textBox1.Text = $"{4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
-            textBox2.Text = $"{(4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 3) * Math.PI) / 3 : 0.00}";
+            try
+            {
+                textBox1.Text = $"{4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
+                textBox2.Text = $"{(4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 3) * Math.PI) / 3 : 0.00}";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
