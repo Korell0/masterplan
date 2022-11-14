@@ -105,8 +105,8 @@ namespace MasterPlanProgram
             {
                 "a oldal: ",
                 "b oldal: ",
-                "e atlo: ",
-                "f atlo: "
+                "e átló: ",
+                "f átló: "
             };
             GenerateInput(cimkek, hely);
             Actual.Szamol.Click += SzamolDeltoid;
