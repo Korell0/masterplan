@@ -41,3 +41,4 @@ D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterP
 D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.csproj.CoreCompileInputs.cache
 D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.exe
 D:\Tananyag\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.pdb
+D:\xampp\htdocs\2-14 SZFT 2022-2023\IKT\masterplan\MasterPlanProgram\MasterPlanProgram\obj\Debug\MasterPlanProgram.Sikideg.resources

@@ -50,6 +50,7 @@ namespace MasterPlanProgram
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.resetBtn = new System.Windows.Forms.Button();
+            this.visszaBtn = new System.Windows.Forms.Button();
             this.groupbox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hengerBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gulaBtn)).BeginInit();
@@ -279,11 +280,24 @@ namespace MasterPlanProgram
             this.resetBtn.Visible = false;
             this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
+            // visszaBtn
+            // 
+            this.visszaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.visszaBtn.Location = new System.Drawing.Point(12, 404);
+            this.visszaBtn.Name = "visszaBtn";
+            this.visszaBtn.Size = new System.Drawing.Size(54, 45);
+            this.visszaBtn.TabIndex = 9;
+            this.visszaBtn.Text = "🔙";
+            this.visszaBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.visszaBtn.UseVisualStyleBackColor = true;
+            this.visszaBtn.Click += new System.EventHandler(this.visszaBtn_Click);
+            // 
             // Sikideg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 461);
+            this.Controls.Add(this.visszaBtn);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -337,5 +351,6 @@ namespace MasterPlanProgram
         private System.Windows.Forms.PictureBox korBtn;
         private System.Windows.Forms.PictureBox haromszogBtn;
         private System.Windows.Forms.PictureBox deltoidBtn;
+        private System.Windows.Forms.Button visszaBtn;
     }
 }
