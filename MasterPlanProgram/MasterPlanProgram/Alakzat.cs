@@ -14,9 +14,9 @@ namespace MasterPlanProgram
         public List<Label> Cimkek = new List<Label>();
         public List<TextBox> Bemenet = new List<TextBox>();
         public Button Szamol = new Button();
-        public string KepHely;
+        public List<Image> Kepek;
 
-        public Alakzat(List<string> cimkek, string hely)
+        public Alakzat(List<string> cimkek, List<Image> kepek)
         {
             for (int i = 0; i < cimkek.Count; i++)
             {
@@ -36,8 +36,8 @@ namespace MasterPlanProgram
             Szamol.Text = "Számol";
             Szamol.Location = new Point(375, 225);
             Szamol.Size = new Size(60, 30);
-            
-            KepHely = hely;
+
+            Kepek = kepek;
 
         }
 

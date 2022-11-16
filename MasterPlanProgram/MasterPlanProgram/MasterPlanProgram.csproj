@@ -65,7 +65,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -92,6 +92,102 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\alap_gomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Gömb\gomb_1.png" />
+    <None Include="Resources\Alakzatok\Gömb\gomb_0.png" />
+    <None Include="Resources\Alakzatok\Deltoid\deltoid_4.png" />
+    <None Include="Resources\Alakzatok\Deltoid\deltoid_3.png" />
+    <None Include="Resources\Alakzatok\Deltoid\deltoid_2.png" />
+    <None Include="Resources\Alakzatok\Deltoid\deltoid_1.png" />
+    <None Include="Resources\Alakzatok\Deltoid\deltoid_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Gúla\gula_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Gúla\gula_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Gúla\gula_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Háromszög\haromszog_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Háromszög\haromszog_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Háromszög\haromszog_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Háromszög\haromszog_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Henger\henger_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Henger\henger_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Henger\henger_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Kör\kor_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Kör\kor_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Négyzet\negyzet_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Négyzet\negyzet_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Paralelogramma\paralelogramma_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Paralelogramma\paralelogramma_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Paralelogramma\paralelogramma_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Paralelogramma\paralelogramma_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Rombusz\rombusz_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Rombusz\rombusz_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Rombusz\rombusz_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Rombusz\rombusz_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Téglalap\teglalap_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Téglalap\teglalap_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Téglalap\teglalap_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Trapéz\trapez_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Trapéz\trapez_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Trapéz\trapez_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alakzatok\Trapéz\trapez_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

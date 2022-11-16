@@ -27,7 +27,7 @@ namespace MasterPlanProgram
 
         }
 
-        private void GenerateInput(List<string> cimkek, string hely)
+        private void GenerateInput(List<string> cimkek, List<Image> kepek)
         {
             resetBtn.Visible = true;
             textBox1.Visible = true;
@@ -35,23 +35,23 @@ namespace MasterPlanProgram
             label1.Visible = true;
             label2.Visible = true;
             RemoveVisibleInput();
-            Actual = new Alakzat(cimkek, hely);
+            Actual = new Alakzat(cimkek, kepek);
 
             for (int i = 0; i < cimkek.Count; i++)
             {
                 this.Controls.Add(Actual.Cimkek[i]);
                 this.Controls.Add(Actual.Bemenet[i]);
-                int valami = i+1;
-                Actual.Bemenet[i].Click += delegate (object sender, EventArgs e) { Kijelol(sender, e, Actual.KepHely, valami.ToString()); };
+                int index = i+1;
+                Actual.Bemenet[i].Click += delegate (object sender, EventArgs e) { Kijelol(sender, e, Actual.Kepek[index]); };
             }
             this.Controls.Add(Actual.Szamol);
-            pictureBox1.Image = Image.FromFile($"{hely}0.png");
+            pictureBox1.Image = Actual.Kepek[0];
 
         }
 
-        private void Kijelol(object sender, EventArgs e, string hely, string nev)
+        private void Kijelol(object sender, EventArgs e, Image kep)
         {
-            pictureBox1.Image = Image.FromFile($"{hely}{nev}.png");
+            pictureBox1.Image = kep;
         }
 
         private void RemoveVisibleInput()
@@ -69,42 +69,38 @@ namespace MasterPlanProgram
 
         private void gombBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Gömb/";
             List<string> cimkek = new List<string>()
             {
                 "r sugár: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.gomb_0, Properties.Resources.gomb_1 });
             Actual.Szamol.Click += SzamolGomb;
         }
 
         private void gulaBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Gúla/";
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
                 "M magasság:"
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.gula_0, Properties.Resources.gula_1, Properties.Resources.gula_2 });
             Actual.Szamol.Click += SzamolGula;
         }
 
         private void hengerBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Henger/";
             List<string> cimkek = new List<string>()
             {
                 "r sugár: ",
                 "M magasság: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.henger_0, Properties.Resources.henger_1, Properties.Resources.henger_2 });
             Actual.Szamol.Click += SzamolHenger;
         }
 
         private void deltoidBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Deltoid/";
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
@@ -112,87 +108,80 @@ namespace MasterPlanProgram
                 "e átló: ",
                 "f átló: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.deltoid_0, Properties.Resources.deltoid_1, Properties.Resources.deltoid_2, Properties.Resources.deltoid_3, Properties.Resources.deltoid_4 });
             Actual.Szamol.Click += SzamolDeltoid;
         }
 
         private void haromszogBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Háromszög/";
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
                 "b oldal: ",
                 "c oldal: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.haromszog_0, Properties.Resources.haromszog_1, Properties.Resources.haromszog_2, Properties.Resources.haromszog_3 });
             Actual.Szamol.Click += SzamolHaromszog;
         }
         private void paralelogrammaBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Paralelogramma/";
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
                 "b oldal: ",
                 "m magasság: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.paralelogramma_0, Properties.Resources.paralelogramma_1, Properties.Resources.paralelogramma_2, Properties.Resources.paralelogramma_3 });
             Actual.Szamol.Click += SzamolParalelogramma;
         }
         private void korBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Kör/";
             List<string> cimkek = new List<string>()
             {
                 "r sugár: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.kor_0, Properties.Resources.kor_1});
             Actual.Szamol.Click += SzamolKor;
         }
         private void negyzetBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Négyzet/";
             List<string> cimkek = new List<string>()
             {
                 "a oldal: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.negyzet_0, Properties.Resources.negyzet_1 });
             Actual.Szamol.Click += SzamolNegyzet;
         }
         private void rombuszBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Rombusz/";
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
                 "e átlő: ",
                 "f átló: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.rombusz_0, Properties.Resources.rombusz_1, Properties.Resources.rombusz_2, Properties.Resources.rombusz_3 });
             Actual.Szamol.Click += SzamolRombusz;
         }
         private void teglalapBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Téglalap/";
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
                 "b oldal: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.teglalap_0, Properties.Resources.teglalap_1, Properties.Resources.teglalap_2 });
             Actual.Szamol.Click += SzamolTeglalap;
         }
         private void trapezBtn_Click(object sender, EventArgs e)
         {
-            string hely = "Alakzatok/Trapéz/";
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
                 "b oldal: ",
                 "c oldal: "
             };
-            GenerateInput(cimkek, hely);
+            GenerateInput(cimkek, new List<Image>() { Properties.Resources.trapez_0, Properties.Resources.trapez_1, Properties.Resources.trapez_2, Properties.Resources.trapez_3 });
             Actual.Szamol.Click += SzamolTrapez;
         }
 

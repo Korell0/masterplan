@@ -121,4 +121,112 @@
   <data name="alap_gomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alap_gomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="deltoid_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Deltoid\deltoid_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deltoid_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Deltoid\deltoid_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deltoid_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Deltoid\deltoid_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deltoid_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Deltoid\deltoid_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deltoid_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Deltoid\deltoid_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gomb_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Gömb\gomb_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gomb_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Gömb\gomb_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gula_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Gúla\gula_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gula_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Gúla\gula_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gula_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Gúla\gula_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="haromszog_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Háromszög\haromszog_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="haromszog_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Háromszög\haromszog_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="haromszog_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Háromszög\haromszog_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="haromszog_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Háromszög\haromszog_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="henger_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Henger\henger_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="henger_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Henger\henger_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="henger_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Henger\henger_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kor_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Kör\kor_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kor_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Kör\kor_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negyzet_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Négyzet\negyzet_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negyzet_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Négyzet\negyzet_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paralelogramma_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Paralelogramma\paralelogramma_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paralelogramma_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Paralelogramma\paralelogramma_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paralelogramma_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Paralelogramma\paralelogramma_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paralelogramma_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Paralelogramma\paralelogramma_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombusz_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Rombusz\rombusz_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombusz_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Rombusz\rombusz_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombusz_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Rombusz\rombusz_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombusz_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Rombusz\rombusz_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teglalap_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Téglalap\teglalap_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teglalap_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Téglalap\teglalap_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teglalap_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Téglalap\teglalap_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trapez_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Trapéz\trapez_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trapez_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Trapéz\trapez_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trapez_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Trapéz\trapez_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trapez_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alakzatok\Trapéz\trapez_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

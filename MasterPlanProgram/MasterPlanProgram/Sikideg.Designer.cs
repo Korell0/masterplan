@@ -309,6 +309,7 @@ namespace MasterPlanProgram
             this.MaximumSize = new System.Drawing.Size(850, 500);
             this.MinimumSize = new System.Drawing.Size(850, 500);
             this.Name = "Sikideg";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sikideg";
             this.groupbox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.hengerBtn)).EndInit();
