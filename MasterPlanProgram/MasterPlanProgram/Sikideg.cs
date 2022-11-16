@@ -19,6 +19,7 @@ namespace MasterPlanProgram
         public Sikideg(int box, List<string> adatok, Form1 menu)
         {
             InitializeComponent();
+            Bezarhat = true;
             new List<GroupBox>() { groupbox1, groupbox2 }[box].Visible = true;
             groupbox2.Location = groupbox1.Location;
             label1.Text = adatok[0];
@@ -157,8 +158,7 @@ namespace MasterPlanProgram
             List<string> cimkek = new List<string>()
             {
                 "a oldal: ",
-                "e átlő: ",
-                "f átló: "
+                "e átló: "
             };
             GenerateInput(cimkek, new List<Image>() { Properties.Resources.rombusz_0, Properties.Resources.rombusz_1, Properties.Resources.rombusz_2, Properties.Resources.rombusz_3 });
             Actual.Szamol.Click += SzamolRombusz;
@@ -187,20 +187,41 @@ namespace MasterPlanProgram
 
         private void SzamolTrapez(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(Actual.Bemenet[0].Text);
-            double b = Convert.ToDouble(Actual.Bemenet[1].Text);
-            double c = Convert.ToDouble(Actual.Bemenet[2].Text);
-            double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow(((a - c) / 2), 2));
-            textBox1.Text = $"{a + c + b * 2 : 0.00}";
-            textBox2.Text = $"{((a + c) * m) / 2: 0.00}";
+            try
+            {
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+                    double b = Convert.ToDouble(Actual.Bemenet[1].Text);
+                    double c = Convert.ToDouble(Actual.Bemenet[2].Text);
+                    double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow(((a - c) / 2), 2));
+                    textBox1.Text = $"{a + c + b * 2 : 0.00}";
+                    textBox2.Text = $"{((a + c) * m) / 2: 0.00}";
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void SzamolTeglalap(object sender, EventArgs e)
         {
             try
             {
-                textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
-                textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * Convert.ToDouble(Actual.Bemenet[1].Text): 0.00}";
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
+                    textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * Convert.ToDouble(Actual.Bemenet[1].Text): 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -212,8 +233,18 @@ namespace MasterPlanProgram
         {
             try
             {
-                textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
-                textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[1].Text) * Convert.ToDouble(Actual.Bemenet[2].Text)) / 2: 0.00}";
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+                    double _e = Convert.ToDouble(Actual.Bemenet[1].Text);
+                    double f = 2 * (Math.Sqrt(Math.Pow(a, 2) - Math.Pow(_e / 2, 2)));
+                    textBox1.Text = $"{4 * a: 0.00}";
+                    textBox2.Text = $"{(_e * f) / 2: 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -225,8 +256,15 @@ namespace MasterPlanProgram
         {
             try
             {
-                textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
-                textBox2.Text = $"{ Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2): 0.00}";
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    textBox1.Text = $"{4 * Convert.ToDouble(Actual.Bemenet[0].Text): 0.00}";
+                    textBox2.Text = $"{ Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2): 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -238,8 +276,15 @@ namespace MasterPlanProgram
         {
             try
             {
-                textBox1.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * 2 * Math.PI : 0.00}";
-                textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    textBox1.Text = $"{Convert.ToDouble(Actual.Bemenet[0].Text) * 2 * Math.PI: 0.00}";
+                    textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI: 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -251,8 +296,15 @@ namespace MasterPlanProgram
         {
             try
             {
-                textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)) : 0.00}";
-                textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[1].Text)* Convert.ToDouble(Actual.Bemenet[2].Text) : 0.00}";
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) > Convert.ToDouble(Actual.Bemenet[0].Text))
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
+                    textBox2.Text = $"{Convert.ToDouble(Actual.Bemenet[1].Text) * Convert.ToDouble(Actual.Bemenet[2].Text): 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -267,9 +319,15 @@ namespace MasterPlanProgram
                 double a = Convert.ToDouble(Actual.Bemenet[0].Text);
                 double b = Convert.ToDouble(Actual.Bemenet[1].Text);
                 double c = Convert.ToDouble(Actual.Bemenet[2].Text);
-                double s = (a + b + c) / 2;
-                textBox1.Text = $"{a + b + c: 0.00}";
-                textBox2.Text = $"{Math.Sqrt(s*(s-a)*(s-b)*(s-c)): 0.00}";
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0 || HaromszogEgyenlotlen(a, b, c))
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                } else
+                {
+                    double s = (a + b + c) / 2;
+                    textBox1.Text = $"{a + b + c: 0.00}";
+                    textBox2.Text = $"{Math.Sqrt(s*(s-a)*(s-b)*(s-c)): 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -277,13 +335,32 @@ namespace MasterPlanProgram
             }
         }
 
+        private bool HaromszogEgyenlotlen(double a, double b, double c)
+        {
+            if (a + b < c || a + c < b || b + c < a)
+            {
+                return true;
+            }
+            return false;
+        }
 
         private void SzamolDeltoid(object sender, EventArgs e)
         {
             try
             {
-                textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
-                textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[2].Text) * Convert.ToDouble(Actual.Bemenet[3].Text)) / 2: 0.00}";
+                double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+                double b = Convert.ToDouble(Actual.Bemenet[1].Text);
+                double _e = Convert.ToDouble(Actual.Bemenet[2].Text);
+                double f = Convert.ToDouble(Actual.Bemenet[3].Text);
+                if (a <= 0 || b <= 0 || _e <= 0 || f <= 0 || _e > a + b || f > a + b)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
+                    textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[2].Text) * Convert.ToDouble(Actual.Bemenet[3].Text)) / 2: 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -295,8 +372,16 @@ namespace MasterPlanProgram
         {
             try
             {
-                textBox1.Text = $"{2*Convert.ToDouble(Actual.Bemenet[0].Text)*Math.PI* Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
-                textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text),2)*Math.PI*Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+                else
+                {
+                    textBox1.Text = $"{2*Convert.ToDouble(Actual.Bemenet[0].Text)*Math.PI* Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
+                    textBox2.Text = $"{Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text),2)*Math.PI*Convert.ToDouble(Actual.Bemenet[1].Text) : 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -308,12 +393,19 @@ namespace MasterPlanProgram
         {
             try
             {
-                double a = Convert.ToDouble(Actual.Bemenet[0].Text);
-                double M = Convert.ToDouble(Actual.Bemenet[1].Text);
-                double aM = Math.Sqrt(Math.Pow(a/2, 2) + Math.Pow(M , 2));
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+                    double M = Convert.ToDouble(Actual.Bemenet[1].Text);
+                    double aM = Math.Sqrt(Math.Pow(a/2, 2) + Math.Pow(M , 2));
 
-                textBox1.Text = $"{((a * aM) / 2) * 4 + Math.Pow(a, 2): 0.00}";
-                textBox2.Text = $"{(Math.Pow(a, 2)*M)/3: 0.00}";
+                    textBox1.Text = $"{((a * aM) / 2) * 4 + Math.Pow(a, 2): 0.00}";
+                    textBox2.Text = $"{(Math.Pow(a, 2)*M)/3: 0.00}";
+                }
             }
             catch (Exception)
             {
@@ -325,8 +417,15 @@ namespace MasterPlanProgram
         {
             try
             {
-                textBox1.Text = $"{4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
-                textBox2.Text = $"{(4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 3) * Math.PI) / 3 : 0.00}";
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0)
+                {
+                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    textBox2.Text = $"{(4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 3) * Math.PI) / 3 : 0.00}";
+                    textBox1.Text = $"{4 * Math.Pow(Convert.ToDouble(Actual.Bemenet[0].Text), 2) * Math.PI : 0.00}";
+                }
             }
             catch (Exception)
             {
