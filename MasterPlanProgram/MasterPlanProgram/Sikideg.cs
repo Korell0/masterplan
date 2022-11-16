@@ -13,14 +13,18 @@ namespace MasterPlanProgram
     public partial class Sikideg : Form
     {
         static Alakzat Actual;
+        static Form1 Menu;
+        static bool Bezarhat = true;
         
-        public Sikideg(int box, List<string> adatok)
+        public Sikideg(int box, List<string> adatok, Form1 menu)
         {
             InitializeComponent();
             new List<GroupBox>() { groupbox1, groupbox2 }[box].Visible = true;
             groupbox2.Location = groupbox1.Location;
             label1.Text = adatok[0];
             label2.Text = adatok[1];
+            Menu = menu;
+
         }
 
         private void GenerateInput(List<string> cimkek, string hely)
@@ -343,7 +347,10 @@ namespace MasterPlanProgram
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (Bezarhat)
+            {
+                Application.Exit();
+            }
         }
 
         private void resetBtn_Click(object sender, EventArgs e)
@@ -354,6 +361,13 @@ namespace MasterPlanProgram
             }
             textBox1.Text = "";
             textBox2.Text = "";
+        }
+
+        private void visszaBtn_Click(object sender, EventArgs e)
+        {
+            Bezarhat = false;
+            Menu.Show();
+            this.Close();
         }
     }
 }
