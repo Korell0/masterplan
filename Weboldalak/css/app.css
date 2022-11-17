@@ -44,6 +44,7 @@ footer {
     text-align: center;
     font-size: 80%;
     letter-spacing: 3px;
+    padding-bottom: 5px;
 }
 
 p {
@@ -78,12 +79,6 @@ span {
     text-align: center;
     margin-top: 10px;
 }
-
-.programoldal { 
-
-
-}
-  
 .kozepe {
     text-align: center;
     border-radius: 20px;
@@ -98,19 +93,19 @@ span {
 }
   
 .balfent {
-    text-align: center;
+    text-align: justify;
     width:50%;
     height:300px;
     border-radius: 35px;
     filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
     }
   
-.ballent {text-align: center;}
+.ballent {text-align: justify;}
   
-.jobbfent {text-align: center;}
+.jobbfent {text-align: justify;}
   
 .jobblent {
-    text-align: center;
+    text-align: justify;
     width:50%;
     height:300px;
     border-radius: 35px;
@@ -123,43 +118,61 @@ h3{text-align: center;}
     width:200px;
     height: 200px;
     border-radius: 10%;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
 }
-.kep{
+.kep2{
     width:80%;
     height: 100%;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 1%;
-    border-radius: 10%;
+    border-radius: 15%;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+.kep1{
+    width:80%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    border-radius: 17%;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
 }
 
 
 .csapat{
     width: 60%;
-    height: 200px;
+    height: 250px;
     margin-bottom: 5%;
     border-radius: 5%;
     margin-left: 3%;
     margin-right: 3%;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
 }
 
 @media screen and (max-width: 600px){
     .icon{
         width: 10%;
         height: 10%;
-        padding-bottom: 4%;
+        padding-bottom: 5px;
     }
     .telo{
         font-size: 190%;
     }
     .csapat{
         width: 94%;
-        height: 200px;
+        height: 250px;
         margin-bottom: 60px;
         border-radius: 10%;
         margin-left: 3%;
     }
-    .kep{
+    .kep1{
+        width:200%;
+        height: 80%;
+        margin-bottom: 3%;
+        border-radius: 12%;
+    }
+    .kep2{
         width:200%;
         height: 80%;
         margin-bottom: 3%;
@@ -172,5 +185,11 @@ h3{text-align: center;}
         border-radius: 35px;
         filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
     }
-    
+    footer {
+        background-color: #2C2C32;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        font-size: 80%;
+        padding: 0%;
+    }
 }
