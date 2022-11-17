@@ -106,8 +106,7 @@ namespace MasterPlanProgram
             {
                 "a oldal: ",
                 "b oldal: ",
-                "e átló: ",
-                "f átló: "
+                "e átló: "
             };
             GenerateInput(cimkek, new List<Image>() { Properties.Resources.deltoid_0, Properties.Resources.deltoid_1, Properties.Resources.deltoid_2, Properties.Resources.deltoid_3, Properties.Resources.deltoid_4 });
             Actual.Szamol.Click += SzamolDeltoid;
@@ -189,16 +188,16 @@ namespace MasterPlanProgram
         {
             try
             {
-                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0)
+                double a = Convert.ToDouble(Actual.Bemenet[0].Text);
+                double b = Convert.ToDouble(Actual.Bemenet[1].Text);
+                double c = Convert.ToDouble(Actual.Bemenet[2].Text);
+                double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow(((a - c) / 2), 2));
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0 || b <= (a-c)/2)
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    double a = Convert.ToDouble(Actual.Bemenet[0].Text);
-                    double b = Convert.ToDouble(Actual.Bemenet[1].Text);
-                    double c = Convert.ToDouble(Actual.Bemenet[2].Text);
-                    double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow(((a - c) / 2), 2));
                     textBox1.Text = $"{a + c + b * 2 : 0.00}";
                     textBox2.Text = $"{((a + c) * m) / 2: 0.00}";
                 }
@@ -215,7 +214,7 @@ namespace MasterPlanProgram
             {
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0)
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -233,9 +232,9 @@ namespace MasterPlanProgram
         {
             try
             {
-                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0)
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) >= 2 * Convert.ToDouble(Actual.Bemenet[0].Text))
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -258,7 +257,7 @@ namespace MasterPlanProgram
             {
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0)
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -278,7 +277,7 @@ namespace MasterPlanProgram
             {
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0)
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -298,7 +297,7 @@ namespace MasterPlanProgram
             {
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) > Convert.ToDouble(Actual.Bemenet[0].Text))
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -321,7 +320,7 @@ namespace MasterPlanProgram
                 double c = Convert.ToDouble(Actual.Bemenet[2].Text);
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0 || HaromszogEgyenlotlen(a, b, c))
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 } else
                 {
                     double s = (a + b + c) / 2;
@@ -351,10 +350,12 @@ namespace MasterPlanProgram
                 double a = Convert.ToDouble(Actual.Bemenet[0].Text);
                 double b = Convert.ToDouble(Actual.Bemenet[1].Text);
                 double _e = Convert.ToDouble(Actual.Bemenet[2].Text);
-                double f = Convert.ToDouble(Actual.Bemenet[3].Text);
-                if (a <= 0 || b <= 0 || _e <= 0 || f <= 0 || _e > a + b || f > a + b)
+                double s = (a + b + _e) / 2;
+                double t = Math.Sqrt(s * (s - a) * (s - b) * (s - _e));
+                double f = 2 * ((2 * t) / _e);
+                if (a <= 0 || b <= 0 || _e <= 0 || HaromszogEgyenlotlen(a, b, _e))
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -374,7 +375,7 @@ namespace MasterPlanProgram
             {
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0)
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
                 else
@@ -395,7 +396,7 @@ namespace MasterPlanProgram
             {
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[1].Text) <= 0)
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -419,7 +420,7 @@ namespace MasterPlanProgram
             {
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0)
                 {
-                    MessageBox.Show("Hibás bemeneti adatok", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
