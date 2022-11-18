@@ -360,7 +360,7 @@ namespace MasterPlanProgram
                 else
                 {
                     textBox1.Text = $"{2 * (Convert.ToDouble(Actual.Bemenet[0].Text) + Convert.ToDouble(Actual.Bemenet[1].Text)): 0.00}";
-                    textBox2.Text = $"{(Convert.ToDouble(Actual.Bemenet[2].Text) * Convert.ToDouble(Actual.Bemenet[3].Text)) / 2: 0.00}";
+                    textBox2.Text = $"{(_e*f) / 2: 0.00}";
                 }
             }
             catch (Exception)
