@@ -188,8 +188,8 @@ namespace MasterPlanProgram
         {
             try
             {
-                double a = Convert.ToDouble(Actual.Bemenet[0].Text);
-                double b = Convert.ToDouble(Actual.Bemenet[1].Text);
+                double b = Convert.ToDouble(Actual.Bemenet[0].Text);
+                double a = Convert.ToDouble(Actual.Bemenet[1].Text);
                 double c = Convert.ToDouble(Actual.Bemenet[2].Text);
                 double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow(((a - c) / 2), 2));
                 if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0 || b <= (a-c)/2)
