@@ -1,0 +1,197 @@
+body {
+    background-color: silver;
+    color: white;
+}
+
+header {
+    background-color: #2C2C32;
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-size: 250%;
+    text-align: center;
+    padding-bottom: 5px;
+    height: 2%;
+}
+
+.nav{
+    background-color: #2C2C32;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color:royalblue !important;
+}
+
+.contain{
+    background-color: #4F4F5F;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    background-color: #2C2C32;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 80%;
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+    margin-left: 3%;
+}
+.cim{
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+.ocim{
+    width: 100%;
+}
+
+li {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px dotted gray;
+}
+
+span {
+    position: absolute;
+    right: 0px
+}
+
+.icon
+{
+    width: 2.5%;
+    height: 2.5%;
+}
+.telo{
+    font-size: 175%;
+    text-align: center;
+    margin-top: 10px;
+}
+.kozepe {
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    font-weight: bold;
+    border: 0px solid black;
+    background-color: #C3C3C3;
+}
+.kozepe2{
+    text-align: center;
+}
+  
+.balfent {
+    text-align: justify;
+    width:50%;
+    height:300px;
+    border-radius: 35px;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+    }
+  
+.ballent {text-align: justify;}
+  
+.jobbfent {text-align: justify;}
+  
+.jobblent {
+    text-align: justify;
+    width:50%;
+    height:300px;
+    border-radius: 35px;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+h3{text-align: center;}
+
+.ember{
+    width:200px;
+    height: 200px;
+    border-radius: 10%;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+.kep2{
+    width:80%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    border-radius: 15%;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+.kep1{
+    width:80%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    border-radius: 17%;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+
+.csapat{
+    width: 60%;
+    height: 250px;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 600px){
+    .icon{
+        width: 10%;
+        height: 10%;
+        padding-bottom: 5px;
+    }
+    .telo{
+        font-size: 190%;
+    }
+    .csapat{
+        width: 94%;
+        height: 250px;
+        margin-bottom: 60px;
+        border-radius: 10%;
+        margin-left: 3%;
+    }
+    .kep1{
+        width:200%;
+        height: 80%;
+        margin-bottom: 3%;
+        border-radius: 12%;
+    }
+    .kep2{
+        width:200%;
+        height: 80%;
+        margin-bottom: 3%;
+        border-radius: 10%;
+    }
+    .jobblent {
+        text-align: center;
+        width:50%;
+        height:30%;
+        border-radius: 35px;
+        filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+    }
+    footer {
+        background-color: #2C2C32;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        font-size: 80%;
+        padding: 0%;
+    }
+}
