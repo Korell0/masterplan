@@ -192,7 +192,7 @@ namespace MasterPlanProgram
                 double a = Convert.ToDouble(Actual.Bemenet[1].Text);
                 double c = Convert.ToDouble(Actual.Bemenet[2].Text);
                 double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow(((a - c) / 2), 2));
-                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0 || b <= (a-c)/2)
+                if (Convert.ToDouble(Actual.Bemenet[0].Text) <= 0 || Convert.ToDouble(Actual.Bemenet[2].Text) <= 0 || b <= Math.Abs((a-c)/2))
                 {
                     MessageBox.Show("Ilyen alakzat nem létezik!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
